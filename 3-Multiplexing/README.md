@@ -15,3 +15,5 @@ These are all channels:
 - `fanIn(boring("boring!"), boring("yay!"))`
 
 After the multiplexing function, the known `for` loop comes. This time, it iterates 9 times. And formats and prints the data which comes from `c`.
+
+To sum up; a function can read from multiple inputs and proceed until all are closed by multiplexing the input channels onto a single channel that's closed when all the inputs are closed. This is called `fan-in` pattern.
